@@ -1,0 +1,55 @@
+/*
+Taner Albayrak
+Taner_Albayrak@student.uml.edu
+*/
+
+#tableForm {
+    text-align: center;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+    background-color: yellow;
+}
+
+input[type="submit"] {
+    color: blue;
+}
+
+.tab th {
+    padding: 10px;
+}
+
+.tab {
+    border: 5px solid black ;
+    margin-left: 200px ;
+    
+}
+
+.tab thead th {
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+.tab tbody td {
+    border: 1px solid black ;
+    color: black ;
+}
+
+/*colors the first row yellow*/
+
+.tab tbody td:first-child {
+    background-color: yellow ;
+}
+
+/*Style the error messages ( label.*** will select the custom error message-
+.error will style the default error message) */
+label.error {
+    color: red;
+    font-style: italic;
+}
+
+input.error {
+    color: red;
+}
