@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- 
+Taner Albayrak
+Taner_Albayrak@student.uml.edu
+Assignment 7: jQuery Validation
+-->
+
+<html>
+    <head>
+        <title>Multiplication Table</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+        
+        <!-- jQuery validation plugin -->
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    <body>
+        <h2>Assignment 7: Dynamic Multiplication Table Generator jQuery Validation</h2>
+        <br>
+        <form id="tableForm" action="%20" method="GET">
+            Multiplier 1: <input type="text" name="rowStart" id="rowStart"><br>
+            Multiplier 2: <input type="text" name="rowEnd" id="rowEnd"><br>
+            Multiplicand 1: <input type="text" name="colStart" id="colStart"><br>
+            Multiplicand 2: <input type="text" name="colEnd" id="colEnd"><br>
+            <input type="submit" value="Submit" onclick="makeTable(); return false;">
+        </form><br>
+            
+        <div id="multTable">
+            
+        </div>
+        
+        <div id="errors">
+        </div>
+        
+    </body>
+</html>
